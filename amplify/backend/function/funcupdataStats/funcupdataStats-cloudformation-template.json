@@ -71,8 +71,8 @@
 				],
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "amplify-reactamplified-dev-154118-deployment",
-					"S3Key": "amplify-builds/funcupdataStats-4c373648767a4d724d51-build.zip"
+					"S3Bucket": "amplify-reactamplified-master-202245-deployment",
+					"S3Key": "amplify-builds/funcupdataStats-334c3857317436584456-build.zip"
 				}
 			}
 		},
