@@ -14,6 +14,9 @@
         "categories": {
             "auth": {
                 "reactamplifiedc2d49cfe": {}
+            },
+            "function": {
+                "mypythonfunction": {}
             }
         }
     },
