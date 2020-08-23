@@ -69,7 +69,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-reactamplified-dev-154118-deployment",
-					"S3Key": "amplify-builds/mypythonfunction-4e776251364859786e47-build.zip"
+					"S3Key": "amplify-builds/mypythonfunction-6e4f50374139456b3470-build.zip"
 				}
 			}
 		},
