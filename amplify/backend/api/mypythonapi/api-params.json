@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/greeting",
+            "lambdaFunction": "mypythonfunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "mypythonapi",
+    "apiName": "mypythonapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "mypythonfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-reactamplified-master-202245-authRole",
+        "unAuthRoleName": "amplify-reactamplified-master-202245-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mypythonfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
