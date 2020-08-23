@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/updateStats",
+            "lambdaFunction": "funcupdataStats",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "apiupdateStats",
+    "apiName": "apiupdateStats",
+    "functionArns": [
+        {
+            "lambdaFunction": "funcupdataStats"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-reactamplified-dev-01625-authRole",
+        "unAuthRoleName": "amplify-reactamplified-dev-01625-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "funcupdataStats",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -33,12 +33,12 @@
 				"FunctionName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"mypythonfunction",
+						"funcupdataStats",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"mypythonfunction",
+									"funcupdataStats",
 									"-",
 									{
 										"Ref": "env"
@@ -65,11 +65,14 @@
 					]
 				},
 				"Runtime": "python3.8",
-				"Layers": [],
+				"Layers": [
+					"arn:aws:lambda:us-east-1:979573242736:layer:requests:2",
+					"arn:aws:lambda:us-east-1:979573242736:layer:mysql-connector:2"
+				],
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-reactamplified-dev-154118-deployment",
-					"S3Key": "amplify-builds/mypythonfunction-4e776251364859786e47-build.zip"
+					"S3Key": "amplify-builds/funcupdataStats-4c373648767a4d724d51-build.zip"
 				}
 			}
 		},
@@ -79,12 +82,12 @@
 				"RoleName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"reactamplifiedLambdaRole0a8d7d4c",
+						"reactamplifiedLambdaRole86deeed5",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"reactamplifiedLambdaRole0a8d7d4c",
+									"reactamplifiedLambdaRole86deeed5",
 									"-",
 									{
 										"Ref": "env"
